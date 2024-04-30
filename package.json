@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+     "client":"cd client && yarn run dev",
+     "backend":"cd Backend && npm start",
+     "dev": "concurrently \"npm run client\" \"npm run backend\""
+  },
+  "name": "blog_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

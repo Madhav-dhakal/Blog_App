@@ -1,0 +1,109 @@
+@mixin mobile{
+   @media screen and (max-width:480px){
+      @content;
+   }
+}
+@mixin tablet{
+   @media screen and (max-width:768px) {
+      @content;
+   }
+}
+
+@mixin laptop{
+   @media screen and (max-width:1200px) {
+      @content;
+   }
+}
+
+
+
+.formContainer {
+   
+   background-image: url("../img/sp2.jpg");
+   background-size: cover;
+  height: 100vh;
+   object-fit: fill;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    overflow: hidden;
+    bottom: 10%;
+   .formWrapper {
+      overflow: hidden;
+     background-color:white;
+     padding: 40px 55px;
+     border-radius: 15px;
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+     align-items: center;
+     justify-content: center;
+     .logo{
+        color:#5d5b8d;
+        font-weight: bold;
+        font-size: 35px;
+
+     }
+     .title{
+        color: #5d5b8d;
+        font-size: 16px;
+     }
+     form{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+       overflow: hidden;
+       justify-content: center;
+       
+        input{
+             padding: 16px;
+             border:none;
+             width:260px;
+             border-bottom: 1px solid #91a4e5;
+             border-radius: 5px;
+             
+             &::placeholder{
+                  color: rgb(175,175,175);
+             }
+        }
+        button{
+             background-color: #7d98ef ;
+             color: white ;
+             padding: 10px;
+             font-weight:bold;
+             border: none;
+             border-radius: 5px;
+             cursor:pointer;
+             &:hover{
+               transform: rotateY(9deg); 
+             }
+        }
+        label{
+          display: flex;
+          align-items: center; 
+          gap: 10px;
+          color: grey; 
+          font-size: 13px; 
+          cursor: pointer;
+   
+        }
+     }
+
+     p{
+        color: #5d5b8d;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+
+       .link{
+         &:hover{
+            color: rgb(46, 223, 105);
+            text-decoration: underline;
+         
+         }
+         text-decoration: none;
+       }
+     }
+   }
+}
+
