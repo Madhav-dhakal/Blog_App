@@ -8,7 +8,7 @@
  -    unauthorize user also can read the blogs content.
 
 ## Technologies Used
-### FrontEnd: HTML,CSS,JavaScript,ReactJS,Bootstrap,React-Bootstrap, Material UI
+### FrontEnd: HTML,CSS,JavaScript,ReactJS,Bootstrap, Material UI
 ### Backend: Nodejs,Expressjs,MongoDB
 ## Getting Started
 1. Clone the repository:
